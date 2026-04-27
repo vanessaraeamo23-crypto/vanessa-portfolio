@@ -27,10 +27,11 @@
       background: #111;
       position: sticky;
       top: 0;
+      z-index: 100;
     }
 
     header h1 {
-      font-size: 24px;
+      font-size: 20px;
       letter-spacing: 2px;
     }
 
@@ -49,11 +50,21 @@
       padding: 80px 10%;
     }
 
+    /* HERO WITH YOUR IMAGE */
     .hero {
-      height: 90vh;
+      height: 100vh;
+      background: url('images/profile-art.png') center/cover no-repeat;
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.65);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
     }
 
     .hero h2 {
@@ -62,8 +73,7 @@
     }
 
     .hero p {
-      max-width: 600px;
-      color: #aaa;
+      color: #ccc;
     }
 
     .btn {
@@ -132,23 +142,20 @@
   </nav>
 </header>
 
+<!-- HERO WITH YOUR IMAGE -->
 <section class="hero">
-  <h2>Creative Portfolio 2026</h2>
-  <p>
-    Multimedia Arts student specializing in photography, design, and visual storytelling.
-    Capturing moments and turning them into meaningful art.
-    <img src="images/333 (1).png" alt="My Work" width="300">
-  </p>
-  <a href="#works" class="btn">View My Work</a>
+  <div class="overlay">
+    <h2>Creative Portfolio 2025</h2>
+    <p>Capturing moments through photography and design.</p>
+    <a href="#works" class="btn">View My Work</a>
+  </div>
 </section>
 
 <section id="about">
   <h2 class="section-title">About Me</h2>
   <p>
-    I am a 26-year-old Multimedia Arts student with a strong passion for photography.
-    What started as a hobby became a meaningful way to capture memories and express emotions.
-    Through my journey, I’ve explored different techniques and styles to better understand
-    how visuals connect with people.
+    I am a Multimedia Arts student passionate about photography, design, and storytelling.
+    What started as a hobby became a way to capture meaningful moments and express emotions visually.
   </p>
 
   <br>
@@ -170,17 +177,16 @@
     <div class="card">
       <h3>BA Multimedia Arts</h3>
       <p>2018 - 2024</p>
-      <p>Academic projects showcasing creativity, design, and real-world application.</p>
     </div>
 
     <div class="card">
       <h3>Player Support Agent</h3>
-      <p>Providing customer assistance and resolving issues efficiently.</p>
+      <p>Customer support and player assistance.</p>
     </div>
 
     <div class="card">
       <h3>Operations CSR</h3>
-      <p>Handled player concerns via chat/email and ensured proper resolutions.</p>
+      <p>Handled concerns via chat/email and resolved issues.</p>
     </div>
   </div>
 </section>
@@ -191,33 +197,19 @@
   <div class="grid">
     <div class="card">
       <h3>Lifestyle Riding</h3>
-      <p>Motorcycle branding logo project.</p>
     </div>
 
     <div class="card">
       <h3>Unmasked Co.</h3>
-      <p>Custom logo for fragrance brand.</p>
     </div>
 
     <div class="card">
       <h3>Nintendo Redesign</h3>
-      <p>School project redesign concept.</p>
     </div>
 
     <div class="card">
       <h3>Clover Chips Redesign</h3>
-      <p>Y2K-themed exhibit logo.</p>
     </div>
-  </div>
-</section>
-
-<section>
-  <h2 class="section-title">Posters & Pubmats</h2>
-
-  <div class="grid">
-    <div class="card">Social Media Pubmats</div>
-    <div class="card">Marketing Posters</div>
-    <div class="card">Banner Mockups</div>
   </div>
 </section>
 
